@@ -1,86 +1,56 @@
-/* General */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fff0f5;
-  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
   color: #333;
-  text-align: center;
+  margin: 20px;
 }
 
 h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #4a4a4a;
 }
 
-.contador {
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-/* Contenedor principal */
-.malla {
+#malla-container {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
-  gap: 30px;
 }
 
-/* Cada semestre */
+/* Cada semestre será una columna */
+
 .semestre {
-  background-color: #ffffff;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
   padding: 15px;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   width: 220px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
 }
 
 .semestre h2 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 700;
+  color: #555;
 }
 
-/* Ramo */
 .ramo {
-  background-color: pink;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 5px 0;
-  cursor: pointer;
-  transition: 0.3s;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  color: #222;
+  font-weight: 600;
+  cursor: default;
   user-select: none;
-  font-weight: 500;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+  transition: transform 0.15s ease;
 }
-
-/* Estado aprobado */
-.ramo.aprobado {
-  background-color: #800080 !important; /* Morado */
-  color: white;
-  text-decoration: line-through;
-}
-
-/* Colores por grupo */
-.grupo-calculo { background-color: #fbb6ce; }
-.grupo-algebra { background-color: #fcd5ce; }
-.grupo-estadistica { background-color: #f9bec7; }
-.grupo-contabilidad { background-color: #f9d5e5; }
-.grupo-economia { background-color: #fac4cc; }
-.grupo-derecho { background-color: #f6ced8; }
-.grupo-habilidades { background-color: #fde2e4; }
-.grupo-finanzas { background-color: #ffd1dc; }
-.grupo-marketing { background-color: #f3b6c4; }
-.grupo-administracion { background-color: #ffc9de; }
-.grupo-gestion { background-color: #fcbad3; }
-.grupo-estrategia { background-color: #fabfd2; }
-.grupo-etica { background-color: #ffe0f0; }
-.grupo-ciencias { background-color: #ffdbe7; }
-.grupo-emprendimiento { background-color: #fddde6; }
-.grupo-investigacion { background-color: #fcd5ec; }
-.grupo-integracion { background-color: #ffe4f2; }
-.grupo-electivo { background-color: #f6d1e7; }
-.grupo-practica { background-color: #f7c6d9; }
-.grupo-tesis { background-color: #f5b3c7; }
 
 .ramo:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
 }
+
